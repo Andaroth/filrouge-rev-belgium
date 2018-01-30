@@ -17,7 +17,7 @@ const Root = () => {
     return (
         <Router>
             <div>
-                <Navbar right brand="Les entendeurs de voix">
+                <Navbar>
                     <NavLink to="/">Acceuil</NavLink>
                     <NavLink to="/About">A propos</NavLink>
                     <NavLink to="/Entendeurs">Entendeurs</NavLink>
