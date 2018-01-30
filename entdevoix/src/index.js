@@ -8,9 +8,9 @@ import Entendeurs from './MainComponents/Entendeurs/Entendeurs';
 import Events from './MainComponents/Events/Events';
 import History from './MainComponents/History/History';
 import Links from './MainComponents/Links/Links';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom';
 import './Assets/CSS/style.css';
-import {Navbar, NavItem} from 'react-materialize';
+import {Navbar} from 'react-materialize';
 
 
 const Root = () => {
@@ -18,13 +18,13 @@ const Root = () => {
         <Router>
             <div>
                 <Navbar right brand="Les entendeurs de voix">
-                    <NavItem href="/">Acceuil</NavItem>
-                    <NavItem href="/About">A propos</NavItem>
-                    <NavItem href="/Entendeurs">Entendeurs</NavItem>
-                    <NavItem href="/Events">Evenements</NavItem>
-                    <NavItem href="/History">Histoire</NavItem>
-                    <NavItem href="/Links">Articles</NavItem>
-                    <NavItem href="/Contact">Contact</NavItem>
+                    <NavLink to="/">Acceuil</NavLink>
+                    <NavLink to="/About">A propos</NavLink>
+                    <NavLink to="/Entendeurs">Entendeurs</NavLink>
+                    <NavLink to="/Events">Evenements</NavLink>
+                    <NavLink to="/History">Histoire</NavLink>
+                    <NavLink to="/Links">Articles</NavLink>
+                    <NavLink to="/Contact">Contact</NavLink>
                 </Navbar>
 
                 <Switch>
