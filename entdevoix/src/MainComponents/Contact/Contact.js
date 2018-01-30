@@ -5,7 +5,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div className="Container Form">
-                <h4>Contact</h4>
+                <h4 className="contact">Contact</h4>
                 <ContactForm/>
             </div>
         )
