@@ -1,16 +1,14 @@
 import React from 'react';
+import {Row,Input,Icon} from 'react-materialize';
 
 export default class ContactForm extends React.Component {
     render() {
         return (
-            <div className="row ">
-                <form className="col s12 ">
-                    <div className="input-field col s12">
-                        <input id="email" type="email" className="validate"/>
-                        <label htmlFor="Name" data-error="wrong" data-success="right">Nom/Prénom</label>
-                    </div>
-                </form>
-            </div>
+            <Row className="contactForm">
+                <Input s={6} label="Name" validate><Icon>account_circle</Icon></Input>
+                <Input s={12} label="Email" validate type='email'><Icon>mail</Icon></Input>
+                <Input s={12} label="Votre Message" validate type='email'><Icon>message</Icon></Input>
+            </Row>
         )
     }
 }

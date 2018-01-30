@@ -1,24 +1,43 @@
-body{
+body {
     box-sizing: border-box;
     margin: 0 auto;
 }
 
-.nav-wrapper{
+.nav-wrapper {
     background-color: lightgreen;
     color: black;
 
 }
 
-nav .brand-logo{
+nav .brand-logo {
     margin-left: 20px;
 }
 
-nav ul{
+nav ul {
     display: flex;
 }
 
-@media (max-width : 991px) {
-    nav ul{
+.Container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+i .contactForm,.material-icons {
+    margin-top: inherit;
+}
+
+@media (max-width: 991px) {
+    nav ul {
         display: block;
+    }
+
+    .Container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .Container {
+        width: 90%;
     }
 }
