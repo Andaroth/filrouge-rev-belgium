@@ -35,7 +35,7 @@ i .contactForm, .material-icons {
 
 .containerForm .btn {
     background-color: #00E3A7;
-    margin-left: 30%;
+    margin-top: 5%;
 }
 
 .containerAcceuil {
@@ -58,7 +58,7 @@ i .contactForm, .material-icons {
     border-bottom: 0.5px solid #00E3A7;
 }
 
-.containerAcceuil #accUl {
+.containerAcceuil .accUl {
     margin-left: 25px;
     margin-top: 30px;
 }
@@ -70,11 +70,20 @@ ul:not(.browser-default) li.accLi{
 .acceuil {
     background-image: url(../Images/background1.jpg);
     background-size: cover;
-    height: 90vh;
+    height: 95vh;
     margin-top: 0;
-    position: fixed;
     width: 100vw;
     font-size: 17px;
+    overflow-y: scroll ;
+    position: inherit;
+}
+
+.containerAcceuil .btn {
+    background-color: #00E3A7;
+}
+
+.allAcc {
+    margin: 0px;
 }
 
 .contact {
@@ -84,9 +93,20 @@ ul:not(.browser-default) li.accLi{
 .Form {
     background-color: #eee;
     padding: 20px;
-    margin-top: 15px;
     border: 1px solid #00E3A7;
     border-radius: 5px;
+    margin-top: 5%;
+    padding: 5%;
+}
+
+.secondSec {
+    position: relative;
+    font-size: 17px;
+    padding: 4%;
+}
+
+.secondSec h5{
+    border-bottom: 1px solid #00E3A7;
 }
 
 @media (max-width: 1300px) {
