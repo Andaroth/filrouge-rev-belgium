@@ -5,7 +5,7 @@ export default class ContactForm extends React.Component {
         return (
             <div className="row ">
                 <form className="col s12 ">
-                    <div className="input-field col s12 m4 l4 ">
+                    <div className="input-field col s12">
                         <input id="email" type="email" className="validate"/>
                         <label htmlFor="Name" data-error="wrong" data-success="right">Nom/Prénom</label>
                     </div>

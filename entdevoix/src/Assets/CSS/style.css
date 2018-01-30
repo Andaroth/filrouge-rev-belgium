@@ -11,13 +11,3 @@ body{
     background-color: #24D17E;
 }
 
-.contactForm form{
-    width: 60%;
-    color: black;
-}
-
-.contactForm input{
-    margin: auto;
-    display: block;
-    display: center;
-}
