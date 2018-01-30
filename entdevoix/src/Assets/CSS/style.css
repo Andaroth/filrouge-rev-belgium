@@ -74,7 +74,7 @@ ul:not(.browser-default) li.accLi{
     margin-top: 0;
     width: 100vw;
     font-size: 17px;
-    overflow-y: scroll ;
+    overflow: hidden ;
     position: inherit;
 }
 
@@ -84,6 +84,7 @@ ul:not(.browser-default) li.accLi{
 
 .allAcc {
     margin: 0px;
+    overflow: hidden;
 }
 
 .contact {
@@ -103,6 +104,7 @@ ul:not(.browser-default) li.accLi{
     position: relative;
     font-size: 17px;
     padding: 4%;
+    margin-bottom: 20px;
 }
 
 .secondSec h5{
