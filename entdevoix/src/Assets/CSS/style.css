@@ -4,7 +4,7 @@ body {
 }
 
 .nav-wrapper {
-    background-color: lightgreen;
+    background-color: #00E3A7;
     color: black;
 
 }
@@ -34,16 +34,65 @@ i .contactForm, .material-icons {
 }
 
 .containerForm .btn {
-    background-color: lightgreen;
+    background-color: #00E3A7;
     margin-left: 30%;
+}
+
+.containerAcceuil {
+    color: black;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5%;
+    border: 1px solid #00E3A7;
+    border-radius: 5px;
+    margin-top: 5%;
+    background-color: rgba(238,238,238,0.5);
+    text-align: justify;
+}
+
+#titleAcc {
+    text-align: center;
+}
+
+#presAcc {
+    border-bottom: 0.5px solid #00E3A7;
+}
+
+.containerAcceuil #accUl {
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+ul:not(.browser-default) li.accLi{
+    list-style-type: circle;
+}
+
+.acceuil {
+    background-image: url(../Images/background1.jpg);
+    background-size: cover;
+    height: 90vh;
+    margin-top: 0;
+    position: fixed;
+    width: 100vw;
+    font-size: 17px;
+}
+
+.contact {
+    border-bottom: 0.5px solid #00E3A7;
 }
 
 .Form {
     background-color: #eee;
-    padding: 10px;
+    padding: 20px;
     margin-top: 15px;
-    border: 1px solid lightgreen;
+    border: 1px solid #00E3A7;
     border-radius: 5px;
+}
+
+@media (max-width: 1300px) {
+    .containerAcceuil {
+        width: 90%;
+    }
 }
 
 @media (max-width: 991px) {
@@ -53,6 +102,10 @@ i .contactForm, .material-icons {
 
     .Container {
         width: 70%;
+    }
+
+    .containerAcceuil {
+        width: 90%;
     }
 }
 
