@@ -15,6 +15,8 @@ nav .brand-logo {
 
 nav ul {
     display: flex;
+    margin: auto;
+    width: max-content;
 }
 
 .Container {
@@ -22,8 +24,26 @@ nav ul {
     margin: 0 auto;
 }
 
-i .contactForm,.material-icons {
+i .contactForm, .material-icons {
     margin-top: inherit;
+}
+
+.contactForm {
+    height: 250px;
+    margin: 0px auto;
+}
+
+.containerForm .btn {
+    background-color: lightgreen;
+    margin-left: 30%;
+}
+
+.Form {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
 }
 
 @media (max-width: 991px) {
