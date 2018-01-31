@@ -12,6 +12,7 @@ body {
 .nav-wrapper {
     background-color: #00E3A7;
     color: black;
+    font-weight: bold;
 }
 
 #adressBtn {
@@ -164,6 +165,45 @@ ul:not(.browser-default) li.accLi {
     margin-top: 70px;
 }
 
+#Event1{
+    display: inline-block;
+}
+
+#Event1 p , #Event1 h5 {
+    width: 70%;
+    float: left;
+}
+
+#imgEvent1 {
+    width: 15%;
+    float: left;
+    margin-left: 10%;
+}
+
+#Event2 {
+    display: inline-block;
+}
+
+#Event2 p, #Event2 h5{
+    display: block;
+    width: 85%;
+    float: right;
+}
+
+#imgEvent2 {
+    width: 10%;
+    float: inherit;
+    display: block;
+    margin-top: 10px;
+}
+
+#EventImg{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
 @media (max-width: 1300px) {
     .containerAcceuil {
         width: 90%;
@@ -184,6 +224,10 @@ ul:not(.browser-default) li.accLi {
 
     .containerAcceuil {
         width: 90%;
+    }
+
+    #Event1{
+        display: block;
     }
 }
 
