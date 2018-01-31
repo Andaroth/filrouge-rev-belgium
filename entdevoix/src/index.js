@@ -8,6 +8,7 @@ import Entendeurs from './MainComponents/Entendeurs/Entendeurs';
 import Events from './MainComponents/Events/Events';
 import History from './MainComponents/History/History';
 import Links from './MainComponents/Links/Links';
+import Footer from './MainComponents/Footer';
 import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom';
 import './Assets/CSS/style.css';
 import {Navbar} from 'react-materialize';
@@ -16,7 +17,7 @@ import {Navbar} from 'react-materialize';
 const Root = () => {
     return (
         <Router>
-            <div>
+            <div id="test">
                 <Navbar>
                     <NavLink to="/">Acceuil</NavLink>
                     <NavLink to="/About">A propos</NavLink>
@@ -26,16 +27,18 @@ const Root = () => {
                     <NavLink to="/Links">Articles</NavLink>
                     <NavLink to="/Contact">Contact</NavLink>
                 </Navbar>
-
-                <Switch>
-                    <Route exact path='/' component={App}/>
-                    <Route exact path='/About' component={About}/>
-                    <Route exact path='/Contact' component={Contact}/>
-                    <Route exact path='/Entendeurs' component={Entendeurs}/>
-                    <Route exact path='/Events' component={Events}/>
-                    <Route exact path='/History' component={History}/>
-                    <Route exact path='/Links' component={Links}/>
-                </Switch>
+                <div className="content">
+                    <Switch>
+                        <Route exact path='/' component={App}/>
+                        <Route exact path='/About' component={About}/>
+                        <Route exact path='/Contact' component={Contact}/>
+                        <Route exact path='/Entendeurs' component={Entendeurs}/>
+                        <Route exact path='/Events' component={Events}/>
+                        <Route exact path='/History' component={History}/>
+                        <Route exact path='/Links' component={Links}/>
+                    </Switch>
+                </div>
+                <Footer/>
             </div>
         </Router>
     )

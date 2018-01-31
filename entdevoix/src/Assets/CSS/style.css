@@ -1,12 +1,56 @@
 body {
     box-sizing: border-box;
     margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.content{
+    display: flow-root;
+    min-height: 88vh;
 }
 
 .nav-wrapper {
     background-color: #00E3A7;
     color: black;
+}
 
+#adressBtn {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#bruxelles{
+    display: flex;
+}
+
+#firstBxl{
+    margin-right: 5%;
+    border-right: 1px solid #00E3A7;
+    padding-right: 5%;
+}
+
+.entend{
+    background-image: url('https://images.unsplash.com/photo-1503441669932-76d3a4625eb9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3e1502480cf91a8fcac6bdafac5f627&auto=format&fit=crop&w=1294&q=80');
+    background-size: cover;
+    width: auto;
+    font-size: 17px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.footer {
+    background-color: #00E3A7;
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 1px;
+    clear: both;
+    display: block;
+}
+
+.footer p{
+    margin-left: 10%;
 }
 
 nav .brand-logo {
@@ -46,7 +90,7 @@ i .contactForm, .material-icons {
     border: 1px solid #00E3A7;
     border-radius: 5px;
     margin-top: 5%;
-    background-color: rgba(238,238,238,0.5);
+    background-color: rgba(238, 238, 238, 0.7);
     text-align: justify;
 }
 
@@ -54,7 +98,7 @@ i .contactForm, .material-icons {
     text-align: center;
 }
 
-#presAcc {
+h4 {
     border-bottom: 0.5px solid #00E3A7;
 }
 
@@ -63,7 +107,7 @@ i .contactForm, .material-icons {
     margin-top: 30px;
 }
 
-ul:not(.browser-default) li.accLi{
+ul:not(.browser-default) li.accLi {
     list-style-type: circle;
 }
 
@@ -74,7 +118,7 @@ ul:not(.browser-default) li.accLi{
     margin-top: 0;
     width: 100vw;
     font-size: 17px;
-    overflow: hidden ;
+    overflow: hidden;
     position: inherit;
 }
 
@@ -98,6 +142,7 @@ ul:not(.browser-default) li.accLi{
     border-radius: 5px;
     margin-top: 5%;
     padding: 5%;
+    margin-bottom: 2.5%;
 }
 
 .secondSec {
@@ -107,13 +152,24 @@ ul:not(.browser-default) li.accLi{
     margin-bottom: 20px;
 }
 
-.secondSec h5{
+.secondSec h5 {
     border-bottom: 1px solid #00E3A7;
+}
+
+#groupe{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
 }
 
 @media (max-width: 1300px) {
     .containerAcceuil {
         width: 90%;
+    }
+    .Form {
+        margin-bottom: 7%;
     }
 }
 
@@ -131,8 +187,12 @@ ul:not(.browser-default) li.accLi{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 601px) {
     .Container {
         width: 90%;
+    }
+
+    .content{
+        min-height: 89vh;
     }
 }
