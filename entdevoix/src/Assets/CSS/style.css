@@ -39,6 +39,15 @@ body {
     background-attachment: fixed;
 }
 
+.backgroundAbout{
+    background-image: url('http://post.phinf.naver.net/MjAxNzAzMDlfMjYw/MDAxNDg5MDQ2MjczMTU1.OwyV8LZ9K3v-BEcPiGIqpfN7bpNyLNwmBssu0lXjyQsg.OJ36VDMxstJsRWbX8p6tSxHAV9k5TnG-pyJPn2V2Qj4g.JPEG/%EC%9D%B4%EB%B3%84_%EA%B7%B9%EB%B3%B5_%EB%B0%A9%EB%B2%95ryan-holloway-168908.jpg?type=w1200');
+    background-size: cover;
+    width: auto;
+    font-size: 17px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
 .footer {
     background-color: #00E3A7;
     position: relative;
@@ -196,3 +205,5 @@ ul:not(.browser-default) li.accLi {
         min-height: 89vh;
     }
 }
+
+
