@@ -25,7 +25,7 @@ export default class Adress extends React.Component {
                     Rencontres une à deux fois par mois de septembre à décembre, les jeudis de 19h à 20h30<br/>
                     Facilitateurs : Jean-Paul et Jonathan<br/>
                     Tél : 04 366 37 44<br/>
-                    Pour plus d'informations sur le groupe à Liège <a target='_blank' href="http://www.rev-belgium.org/downloads/cplu.pdf"> cliquer ici</a></p>
+                    Pour plus d'informations sur le groupe à Liège <a target='_blank' rel="external" href="http://www.rev-belgium.org/downloads/cplu.pdf"> cliquer ici</a></p>
                 <h5>Namur</h5>
                 <p>La Charabiole, rue de Gembloux 179, 5002 Saint-Servais.<br/>
                     Rencontres les 2èmes et 4èmes mercredis du mois, de 16h à 18h.<br/>
