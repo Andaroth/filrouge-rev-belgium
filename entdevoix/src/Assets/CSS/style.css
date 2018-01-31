@@ -3,10 +3,32 @@ body {
     margin: 0 auto;
 }
 
+.content{
+    display: flow-root;
+    min-height: 88vh;
+}
+
 .nav-wrapper {
     background-color: #00E3A7;
     color: black;
+}
 
+#test{
+    min-height: border-box;
+}
+
+.footer {
+    background-color: #00E3A7;
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 1px;
+    clear: both;
+    display: block;
+}
+
+.footer p{
+    margin-left: 10%;
 }
 
 nav .brand-logo {
@@ -46,7 +68,7 @@ i .contactForm, .material-icons {
     border: 1px solid #00E3A7;
     border-radius: 5px;
     margin-top: 5%;
-    background-color: rgba(238,238,238,0.5);
+    background-color: rgba(238, 238, 238, 0.7);
     text-align: justify;
 }
 
@@ -63,7 +85,7 @@ i .contactForm, .material-icons {
     margin-top: 30px;
 }
 
-ul:not(.browser-default) li.accLi{
+ul:not(.browser-default) li.accLi {
     list-style-type: circle;
 }
 
@@ -74,7 +96,7 @@ ul:not(.browser-default) li.accLi{
     margin-top: 0;
     width: 100vw;
     font-size: 17px;
-    overflow: hidden ;
+    overflow: hidden;
     position: inherit;
 }
 
@@ -107,7 +129,7 @@ ul:not(.browser-default) li.accLi{
     margin-bottom: 20px;
 }
 
-.secondSec h5{
+.secondSec h5 {
     border-bottom: 1px solid #00E3A7;
 }
 
@@ -131,8 +153,12 @@ ul:not(.browser-default) li.accLi{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 601px) {
     .Container {
         width: 90%;
+    }
+
+    .content{
+        min-height: 89vh;
     }
 }
