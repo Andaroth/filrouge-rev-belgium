@@ -1,6 +1,7 @@
 body {
     box-sizing: border-box;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .content{
@@ -13,8 +14,29 @@ body {
     color: black;
 }
 
-#test{
-    min-height: border-box;
+#adressBtn {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#bruxelles{
+    display: flex;
+}
+
+#firstBxl{
+    margin-right: 5%;
+    border-right: 1px solid #00E3A7;
+    padding-right: 5%;
+}
+
+.entend{
+    background-image: url('https://images.unsplash.com/photo-1503441669932-76d3a4625eb9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3e1502480cf91a8fcac6bdafac5f627&auto=format&fit=crop&w=1294&q=80');
+    background-size: cover;
+    width: auto;
+    font-size: 17px;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .footer {
@@ -76,7 +98,7 @@ i .contactForm, .material-icons {
     text-align: center;
 }
 
-#presAcc {
+h4 {
     border-bottom: 0.5px solid #00E3A7;
 }
 
@@ -120,6 +142,7 @@ ul:not(.browser-default) li.accLi {
     border-radius: 5px;
     margin-top: 5%;
     padding: 5%;
+    margin-bottom: 2.5%;
 }
 
 .secondSec {
@@ -133,9 +156,20 @@ ul:not(.browser-default) li.accLi {
     border-bottom: 1px solid #00E3A7;
 }
 
+#groupe{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
 @media (max-width: 1300px) {
     .containerAcceuil {
         width: 90%;
+    }
+    .Form {
+        margin-bottom: 7%;
     }
 }
 
