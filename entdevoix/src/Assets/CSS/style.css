@@ -4,6 +4,11 @@ body {
     overflow-x: hidden;
 }
 
+#test{
+    font-size: large;
+    line-height: 160%;
+}
+
 .content{
     display: flow-root;
     min-height: 88vh;
@@ -31,6 +36,15 @@ body {
     padding-right: 5%;
 }
 
+.histoire{
+    background-image: url("https://images.unsplash.com/photo-1472173148041-00294f0814a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53ebc875dc1eb4cad3f065ed65f60714&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    width: auto;
+    font-size: 17px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
 .entend{
     background-image: url('https://images.unsplash.com/photo-1503441669932-76d3a4625eb9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3e1502480cf91a8fcac6bdafac5f627&auto=format&fit=crop&w=1294&q=80');
     background-size: cover;
@@ -40,7 +54,16 @@ body {
     background-attachment: fixed;
 }
 
-.footer {
+.backgroundAbout{
+    background-image: url('http://post.phinf.naver.net/MjAxNzAzMDlfMjYw/MDAxNDg5MDQ2MjczMTU1.OwyV8LZ9K3v-BEcPiGIqpfN7bpNyLNwmBssu0lXjyQsg.OJ36VDMxstJsRWbX8p6tSxHAV9k5TnG-pyJPn2V2Qj4g.JPEG/%EC%9D%B4%EB%B3%84_%EA%B7%B9%EB%B3%B5_%EB%B0%A9%EB%B2%95ryan-holloway-168908.jpg?type=w1200');
+    background-size: cover;
+    width: auto;
+    font-size: 17px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+#footer {
     background-color: #00E3A7;
     position: relative;
     width: 100%;
@@ -48,9 +71,10 @@ body {
     padding: 1px;
     clear: both;
     display: block;
+    font-size: small;
 }
 
-.footer p{
+#footer p{
     margin-left: 10%;
 }
 
@@ -240,3 +264,5 @@ ul:not(.browser-default) li.accLi {
         min-height: 89vh;
     }
 }
+
+
