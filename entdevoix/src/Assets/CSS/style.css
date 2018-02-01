@@ -26,6 +26,10 @@ body {
     margin-left: auto;
 }
 
+#adressBtn button{
+    margin-left: 10px;
+}
+
 #bruxelles{
     display: flex;
 }
