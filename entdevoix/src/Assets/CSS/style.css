@@ -228,6 +228,19 @@ ul:not(.browser-default) li.accLi {
     width: 100%;
 }
 
+.book{
+    float: inherit;
+    margin-right: 15px;
+}
+
+.livre{
+    width: 50%;
+}
+
+#lireMore {
+    display: flex;
+}
+
 @media (max-width: 1300px) {
     .containerAcceuil {
         width: 90%;
