@@ -1,16 +1,31 @@
 import React from 'react';
 import Voice from './Voice';
-import Fondateurs from "./Fondateurs";
-import {Row, Col} from 'react-materialize';
+import {Row, Col, Button, Icon} from 'react-materialize';
+import Book from '../../Assets/Images/1280px-Question_book-new.svg.png';
+import Marius from '../../Assets/Images/mariusromme.jpg';
+import Sandra from '../../Assets/Images/sandraescher.jpg';
 
 export default class History extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            showHis: false
+        }
+    }
+
+    ShowMore(e) {
+        e.preventDefault();
+        this.setState({showHis: !this.state.showHis});
+    }
+
+
     render() {
         return (
             <div className="histoire">
                 <div className="Container Form containerAcceuil">
                     <h4>Histoire</h4>
                     <Row>
-                        <Col s={6}>
+                        <Col l={6} s={12}>
                             <p>Depuis longtemps, il est reconnu qu’un pourcentage élevé de la population générale a un
                                 jour ou
                                 l’autre fait l’expérience d’une entente de voix, parfois brève et occasionnelle, surtout
@@ -32,8 +47,10 @@ export default class History extends React.Component {
                                 période de temps, et seulement un tiers des personnes interrogées ont déclaré avoir subi
                                 des
                                 effets négatifs (Y. Tien).</p></Col>
-                        <Col s={6}>
-                            <p>Des recherches ultérieures plus poussées en 1991 ont révélé que de nombreux cas d’entente
+                        <Col l={6} s={12}>
+                            <img className="book livre" src={Book} alt="livre"/>
+                            <p float="right">Des recherches ultérieures plus poussées en 1991 ont révélé que de nombreux
+                                cas d’entente
                                 de
                                 voix ne répondaient pas aux critères d'un diagnostic psychiatrique (Eaton). De manière
                                 significative, les recherches plus récentes du Prof. Romme, sur des entendeurs de voix,
@@ -45,16 +62,54 @@ export default class History extends React.Component {
                                 l’entente de voix ; les non- patients n’ayant pas peur des voix ; ces derniers ont été
                                 beaucoup
                                 moins bouleversé que les patients.</p>
+                            <Button onClick={this.ShowMore.bind(this)} id="lireMore">Lire la suite<Icon
+                                small>keyboard_arrow_right</Icon></Button>
                         </Col>
                     </Row>
-                    <h5>Que vous disent les voix et que peuvent-elles faire ?</h5>
-
-                    <h5>Les fondateurs</h5>
-
+                    {this.state.showHis && <Voice/>}
+                    <h4>Les fondateurs</h4>
+                    <Row>
+                        <Col s={12} l={6}>
+                            <h5>Marius Romme</h5>
+                            <img className="tete book" alt="Marius" src={Marius}/>
+                            <p>Psychiatre néerlandais, est surtout connu pour son travail sur l’entente de voix
+                                (hallucinations
+                                auditives), il est le fondateur et le principal théoricien du mouvement sur l’entente de
+                                voix.
+                                De 1974 à 1999, il a été professeur de psychiatrie, spécialisé en psychiatrie sociale, à
+                                la
+                                faculté de médecine de l’Université de Maastricht et consultant au Centre de santé
+                                mentale
+                                communautaire de Maastricht. Pour Marius Romme, les délires, entendre des voix et avoir
+                                des
+                                hallucinations, ne sont pas liés à une maladie, mais peuvent être des réactions à des
+                                événements
+                                traumatiques et troublants dans la vie.</p>
+                        </Col>
+                        <Col s={12} l={6}>
+                            <h5>Sandra Escher</h5>
+                            <img className="tete book" alt="Sandra" src={Sandra}/>
+                            <p>Elle est formée à l'École de journalisme de Utrecht, ensuite, elle travaille au
+                                département de
+                                psychiatrie sociale à l’Université de Maastricht. Elle travaille en collaboration avec
+                                Marius
+                                Romme sur le projet des ententes de voix. Elle a organisé huit congrès annuels sur le
+                                sujet et
+                                aidé nombre d’entendeurs de voix à écrire leurs expériences. Elle a passé son doctorat
+                                avec son
+                                son étude sur 80 enfants entendeurs de voix et a écrit « Children hearing voices ».
+                                Ensemble,
+                                ils ont publié de nombreux livres dont « Making sense of voices : a guide for mental
+                                health
+                                professionals working with voices hearers » et « Accepting voices » ou encore « Living
+                                with
+                                voices : 50 stories of recovery ».</p>
+                        </Col>
+                    </Row>
                     <h5>Personnages célèbres qui entendaient des voix :</h5>
                     <p>Socrate, Moïse, Mohammed, Jeanne d’Arc, Ste Thérèse d’Avila, Amélie Nothomb, Zinedine Zidane,
                         Swedenborg, Carl Jung, Anthony Hopkins, Gandhi et bien d’autres encore.<br/>
-                        Vous pouvez consulter <a>un article paru dans l'Express</a></p>
+                        Vous pouvez consulter <a href="http://www.rev-belgium.org/downloads/express.pdf" ref="external" alt="pdf">un article paru dans l'Express</a></p>
                 </div>
             </div>
         )
