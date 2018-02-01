@@ -246,6 +246,13 @@ ul:not(.browser-default) li.accLi {
     width: 50%;
 }
 
+.backgroundLinks img{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
 #lireMore {
     display: flex;
 }

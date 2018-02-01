@@ -24,7 +24,7 @@ export default class Liens extends React.Component {
                     <h4>Articles</h4>
                     <Row>
                         <b>"Prêter l'oreille à ses voix" par Matthieu Cornélis, En Marche, 20 Octobre 2016</b>
-                        <Col s={8}>
+                        <Col l={8} s={6}>
                             <p>Entendre des voix est traditionnellement
                                 présenté comme le symptôme d'une maladie mentale
                                 - singulièrement la schizophrénie - qu'il faut
@@ -35,17 +35,17 @@ export default class Liens extends React.Component {
                             <p>Pour lire l'article cliquer <a
                                 href="http://www.enmarche.be/preter-l-oreille-a-ses-voix.htm?from=sante">ici</a></p>
                         </Col>
-                        <Col s={4}>
+                        <Col l={4} s={6}>
                             <img src="http://www.rev-belgium.org/images/en_marche.jpg"/>
 
                         </Col>
                     </Row>
                     <Row>
                         <b>World Hearing Voices Congress, Madrid, 2015</b>
-                        <Col s={4}>
+                        <Col l={4} s={6}>
                             <img src="http://www.rev-belgium.org/images/madrid2015.jpg"/>
                         </Col>
-                        <Col s={8}>
+                        <Col l={8} s={6}>
                             <p>
                                 Un de nos membres, Jean-Marc Priels,
                                 a participé au 7ème congrès mondial
@@ -60,7 +60,7 @@ export default class Liens extends React.Component {
                     </Row>
                     <Row>
                         <b>Un nouvel article de Philippe LAMBERT, publié dans la revue Moustique (21 octobre 2015)</b>
-                        <Col s={8}>
+                        <Col l={8} s={6}>
                             <p>Entendre des voix est traditionnellement
                                 présenté comme le symptôme d'une maladie mentale
                                 - singulièrement la schizophrénie - qu'il faut
@@ -72,16 +72,16 @@ export default class Liens extends React.Component {
                                 href="http://www.rev-belgium.org/downloads/moustique2015.pdf">ici</a></p>
 
                         </Col>
-                        <Col s={4}>
+                        <Col l={4} s={6}>
                             <img src="http://www.rev-belgium.org/images/moustique2015.jpg"/>
                         </Col>
                     </Row>
                     <Row>
                         <b>Un article de Philippe LAMBERT, publié dans la revue Athena (n°311, mai 2015)</b>
-                        <Col s={4}>
+                        <Col l={4} s={6}>
                             <img src="http://www.rev-belgium.org/images/athena311.jpg"/>
                         </Col>
-                        <Col s={8}>
+                        <Col l={8} s={6}>
                             <p>Entendre des voix est traditionnellement
                                 présenté comme le symptôme d'une maladie mentale
                                 - singulièrement la schizophrénie - qu'il faut
@@ -94,19 +94,24 @@ export default class Liens extends React.Component {
                         </Col>
 
                     </Row>
-                    <b>Un autre article de Philippe LAMBERT, publié sur le site Réflexions (juin 2015)</b>
-                    <p>Entendre des voix est traditionnellement
-                        présenté comme le symptôme d'une maladie mentale
-                        - singulièrement la schizophrénie - qu'il faut
-                        à tout prix supprimer. Selon certains thérapeutes,
-                        cette action radicale est rarement efficace
-                        car elle enferme la personne dans une situation
-                        sans issue et l'isole dans sa souffrance.</p>
-                    <img src="http://www.rev-belgium.org/images/voix00.jpg"/>
-                    <p>Pour lire l'article cliquer <a
-                        href="http://www.rev-belgium.org/downloads/voix00.pdf">ici</a> ou
-                        voir le site cliquer <a
-                            href="http://reflexions.ulg.ac.be/cms/c_390091/fr/des-voix-dans-la-tete">ici</a></p>
+                    <Row>
+                        <b>Un autre article de Philippe LAMBERT, publié sur le site Réflexions (juin 2015)</b>
+                        <Col l={8} s={6}>
+                            <p>Entendre des voix est traditionnellement
+                                présenté comme le symptôme d'une maladie mentale
+                                - singulièrement la schizophrénie - qu'il faut
+                                à tout prix supprimer. Selon certains thérapeutes,
+                                cette action radicale est rarement efficace
+                                car elle enferme la personne dans une situation
+                                sans issue et l'isole dans sa souffrance.</p>
+                            <p>Pour lire l'article cliquer <a
+                                href="http://www.rev-belgium.org/downloads/voix00.pdf">ici</a> ou voir le site cliquer <a
+                                href="http://reflexions.ulg.ac.be/cms/c_390091/fr/des-voix-dans-la-tete">ici</a></p>
+                        </Col>
+                        <Col l={4} s={6}>
+                            <img src="http://www.rev-belgium.org/images/voix00.jpg"/>
+                        </Col>
+                    </Row>
                     <h4>Liens</h4>
                     <ul>
                         <li><a href="http://www.revfrance.org/spip.php?rubrique4">REV France</a></li>
