@@ -13,11 +13,10 @@ import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom'
 import './Assets/CSS/style.css';
 import {Navbar} from 'react-materialize';
 
-
 const Root = () => {
     return (
         <Router>
-            <div id="test">
+            <div id="test" >
                 <Navbar>
                     <NavLink to="/">Acceuil</NavLink>
                     <NavLink to="/About">A propos</NavLink>
