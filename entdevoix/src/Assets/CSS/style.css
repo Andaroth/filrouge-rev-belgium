@@ -63,6 +63,15 @@ body {
     background-attachment: fixed;
 }
 
+.backgroundLinks{
+    background-image: url('https://4.bp.blogspot.com/-q0G7CdQmNfI/WDX8DKKxJvI/AAAAAAAABo8/WYtCoTQiueE-kBowAifj0sEw-dfJQ0CagCLcB/s1600/dark-blur-blurred-gradient.jpg');
+    background-size: cover;
+    width: auto;
+    font-size: 17px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
 #footer {
     background-color: #00E3A7;
     position: relative;
