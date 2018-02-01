@@ -9,7 +9,7 @@ export default class History extends React.Component {
     constructor() {
         super();
         this.state = {
-            showHis: false
+            showHis: false,
         }
     }
 
@@ -66,7 +66,7 @@ export default class History extends React.Component {
                                 small>keyboard_arrow_right</Icon></Button>
                         </Col>
                     </Row>
-                    {this.state.showHis && <Voice/>}
+                    {this.state.showHis && <Voice />}
                     <h4>Les fondateurs</h4>
                     <Row>
                         <Col s={12} l={6}>
