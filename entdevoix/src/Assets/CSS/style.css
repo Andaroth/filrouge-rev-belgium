@@ -284,15 +284,23 @@ ul:not(.browser-default) li.accLi {
 #errorForm {
     background-color: #ED1936;
     text-align: center;
-    margin-top: 10px;
     border-radius: 5px;
     color: #eeeeee;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.errorTransition{
+    animation-name: erreur;
+    animation-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 #errorForm p{
     text-align: center;
     margin-top: 0;
-    padding-bottom: 10px;
 }
 
 #errorForm i{
@@ -339,6 +347,11 @@ ul:not(.browser-default) li.accLi {
     .acceuil {
         height: 100%;
     }
+}
+
+@keyframes erreur {
+    from {top : -100px}
+    to {top : 0}
 }
 
 

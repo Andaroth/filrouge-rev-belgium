@@ -56,6 +56,7 @@ export default class Contact extends React.Component {
             (message === "undefined" || message.trim() === "")) {
             console.log("erreur");
             this.setState({error: true});
+            setTimeout(function(){this.setState({error: false});}.bind(this),1000);
         } else {
 
             let immediatelyAvailableReference = base.push('contact', {
@@ -77,6 +78,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div className="Container Form">
+                {this.state.error && <Error/>}
                 <h4 className="contact">Contact</h4>
                 <div className="containerForm">
                     <Row className="contactForm">
@@ -89,7 +91,6 @@ export default class Contact extends React.Component {
                                    ref="msg"><Icon>message</Icon></Input>
                             <Button type={"submit"} id="BtnForm" children
                                     waves='light'>Envoyer<Icon>send</Icon></Button>
-                            {this.state.error && <Error/>}
                         </form>
                     </Row>
                 </div>
