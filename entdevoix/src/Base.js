@@ -1,11 +1,12 @@
 import firebase from 'firebase';
 
 const app = firebase.initializeApp({
-    apiKey: "AIzaSyD6XMsLSKhZ3Jbf0EtvTbGbPlQJ9doBU6o",
-    authDomain: "test-ffc15.firebaseapp.com",
-    databaseURL: "https://test-ffc15.firebaseio.com",
-    storageBucket: "test-ffc15.appspot.com",
-    messagingSenderId: "400068196220"
+    apiKey: "AIzaSyDKLw4yMYRpLOsaSrCtXftgodtQJsgvvrk",
+    authDomain: "entendeurs-de-voix.firebaseapp.com",
+    databaseURL: "https://entendeurs-de-voix.firebaseio.com",
+    projectId: "entendeurs-de-voix",
+    storageBucket: "entendeurs-de-voix.appspot.com",
+    messagingSenderId: "850697154421"
 });
 
 export default app;

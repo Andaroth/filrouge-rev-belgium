@@ -1,42 +1,56 @@
 import React from 'react';
 import {Row, Input, Icon, Button} from 'react-materialize';
+import Rebase from 're-base';
+import app from '../../Base';
+
+var base = Rebase.createClass(app.database());
 
 export default class Contact extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            nom: '',
-            email: '',
-            message: '',
-        };
-        this.SendMessage = this.SendMessage.bind(this);
-    }
-
-    SendMessage(event) {
-        event.preventDefault();
-        if (this.state.message.trim() === "" || this.state.email.trim() === "") {
-            console.log('error');
-        } else {
-            console.log(this.state);
-            this.setState({
+            contact: {
                 nom: '',
                 email: '',
                 message: ''
-            })
-        }
+            }
+        };
+        /*
+                this.SendMessage = this.SendMessage.bind(this);
+        */
     }
 
-    newMessage(event) {
-        this.setState({message: event.target.value});
+    componentDidMount() {
+        base.syncState(`/`, {
+            context: this,
+            state: 'contact',
+            asArray: true
+        });
     }
 
-    newMail(event) {
-        this.setState({email: event.target.value});
-    }
+    /*SendMessage(event) {
+        event.preventDefault();
+        this.setState({
+            contact: {
+                nom: this.name.state.value,
+                email: this.mail.state.value,
+                message: this.msg.state.value
+            }
+        });
+        this.name.value = '';
+        console.log(this.state);
+    }*/
 
-    newName(event) {
-        this.setState({nom: event.target.value});
+    addBear() {
+        let immediatelyAvailableReference = base.push('contact', {
+            data: {
+                nom: this.name.state.value,
+                email: this.mail.state.value,
+                message: this.msg.state.value
+            },
+        });
+        immediatelyAvailableReference.key;
     }
 
     render() {
@@ -45,17 +59,15 @@ export default class Contact extends React.Component {
                 <h4 className="contact">Contact</h4>
                 <div className="containerForm">
                     <Row className="contactForm">
-                        <form onSubmit={this.SendMessage}>
+                        <form>
                             <Input s={12} label="Nom" validate
-                                   value={this.state.nom}
-                                   onChange={this.newName.bind(this)}><Icon>account_circle</Icon></Input>
+                                   ref={(e) => this.name = e}><Icon>account_circle</Icon></Input>
                             <Input s={12} label="Email" validate type='email'
-                                   value={this.state.email}
-                                   onChange={this.newMail.bind(this)}><Icon>mail</Icon></Input>
+                                   ref={(e) => this.mail = e}><Icon>mail</Icon></Input>
                             <Input s={12} label="Votre Message"
-                                   value={this.state.message}
-                                   onChange={this.newMessage.bind(this)}><Icon>message</Icon></Input>
-                            <Button id="BtnForm" children waves='light'>Envoyer<Icon>send</Icon></Button>
+                                   ref={(e) => this.msg = e}><Icon>message</Icon></Input>
+                            <Button onClick={this.addBear.bind(this)} id="BtnForm" children
+                                    waves='light'>Envoyer<Icon>send</Icon></Button>
                         </form>
                     </Row>
                 </div>
