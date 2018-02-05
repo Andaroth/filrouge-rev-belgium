@@ -4,7 +4,7 @@ import {Button,Icon} from 'react-materialize';
 export default class ButtonForm extends React.Component {
     render() {
         return (
-            <Button children waves='light'>Envoyer<Icon right>send</Icon></Button>
+            <Button onClick={this.props.SendMessage} id="BtnForm" children waves='light'>Envoyer<Icon right>send</Icon></Button>
         )
     }
 }

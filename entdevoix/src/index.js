@@ -18,7 +18,7 @@ const Root = () => {
         <Router>
             <div id="test" >
                 <Navbar>
-                    <NavLink to="/">Acceuil</NavLink>
+                    <NavLink to="/">Accueil</NavLink>
                     <NavLink to="/About">A propos</NavLink>
                     <NavLink to="/Entendeurs">Entendeurs</NavLink>
                     <NavLink to="/Events">Evenements</NavLink>
