@@ -5,7 +5,7 @@ export default class Error extends React.Component {
     render() {
         return (
             <div id="errorForm">
-                <Icon>warning</Icon><p>Please fill all input</p>
+                <Icon>warning</Icon><p>please fill this form correctly</p>
             </div>
         )
     }
