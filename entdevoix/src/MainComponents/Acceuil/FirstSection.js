@@ -10,7 +10,7 @@ export default class FirstSection extends React.Component {
         return (
             <div className="acceuil">
                 <section className="containerAcceuil">
-                    <h4 id="presAcc">Acceuil</h4>
+                    <h4 id="presAcc">Accueil</h4>
                     <h2 id="titleAcc">Entendre des voix</h2>
                     <q>Le fait d’entendre des voix n’est pas, en soi, un symptôme de maladie mentale mais plutôt un
                         phénomène porteur de sens pour les personnes concernées et, pour ces raisons, il convient de

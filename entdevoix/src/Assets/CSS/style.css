@@ -50,7 +50,16 @@ body {
 }
 
 .entend{
-    background-image: url('https://images.unsplash.com/photo-1503441669932-76d3a4625eb9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3e1502480cf91a8fcac6bdafac5f627&auto=format&fit=crop&w=1294&q=80');
+    background-image: url('../Images/photo-1503441669932-76d3a4625eb9.jpeg');
+    background-size: cover;
+    width: auto;
+    font-size: 17px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.event {
+    background-image: url('https://images.unsplash.com/photo-1515100398104-f7221da41f1b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=52c9ab25e8dcaa35591df8e304d1513b&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
     width: auto;
     font-size: 17px;
@@ -261,6 +270,17 @@ ul:not(.browser-default) li.accLi {
     display: flex;
 }
 
+#BtnForm {
+    background-color: #00E3A7;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+
+#BtnForm i{
+    margin-left: 10px;
+}
+
 @media (max-width: 1300px) {
     .containerAcceuil {
         width: 90%;
@@ -295,6 +315,10 @@ ul:not(.browser-default) li.accLi {
 
     .content{
         min-height: 89vh;
+    }
+
+    .acceuil {
+        height: 100%;
     }
 }
 

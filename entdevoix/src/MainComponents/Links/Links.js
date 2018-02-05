@@ -18,8 +18,7 @@ export default class Liens extends React.Component {
 
                         "Quelle voix de rev" (Radio Panik ~ Psylence 2015)</p>
                     <div>
-                        <audio ref="audio_tag" src="http://www.rev-belgium.org/downloads/psylence.mp3" controls
-                               controls/>
+                        <audio ref="audio_tag" src="http://www.rev-belgium.org/downloads/psylence.mp3" controls/>
                     </div>
                     <h4>Articles</h4>
                     <Row>
@@ -36,14 +35,14 @@ export default class Liens extends React.Component {
                                 href="http://www.enmarche.be/preter-l-oreille-a-ses-voix.htm?from=sante">ici</a></p>
                         </Col>
                         <Col l={4} s={6}>
-                            <img src="http://www.rev-belgium.org/images/en_marche.jpg"/>
+                            <img alt="Article" src="http://www.rev-belgium.org/images/en_marche.jpg"/>
 
                         </Col>
                     </Row>
                     <Row>
                         <b>World Hearing Voices Congress, Madrid, 2015</b>
                         <Col l={4} s={6}>
-                            <img src="http://www.rev-belgium.org/images/madrid2015.jpg"/>
+                            <img alt="Article" src="http://www.rev-belgium.org/images/madrid2015.jpg"/>
                         </Col>
                         <Col l={8} s={6}>
                             <p>
@@ -73,13 +72,13 @@ export default class Liens extends React.Component {
 
                         </Col>
                         <Col l={4} s={6}>
-                            <img src="http://www.rev-belgium.org/images/moustique2015.jpg"/>
+                            <img alt="Article" src="http://www.rev-belgium.org/images/moustique2015.jpg"/>
                         </Col>
                     </Row>
                     <Row>
                         <b>Un article de Philippe LAMBERT, publié dans la revue Athena (n°311, mai 2015)</b>
                         <Col l={4} s={6}>
-                            <img src="http://www.rev-belgium.org/images/athena311.jpg"/>
+                            <img alt="Article" src="http://www.rev-belgium.org/images/athena311.jpg"/>
                         </Col>
                         <Col l={8} s={6}>
                             <p>Entendre des voix est traditionnellement
@@ -105,28 +104,36 @@ export default class Liens extends React.Component {
                                 car elle enferme la personne dans une situation
                                 sans issue et l'isole dans sa souffrance.</p>
                             <p>Pour lire l'article cliquer <a
-                                href="http://www.rev-belgium.org/downloads/voix00.pdf">ici</a> ou voir le site cliquer <a
-                                href="http://reflexions.ulg.ac.be/cms/c_390091/fr/des-voix-dans-la-tete">ici</a></p>
+                                href="http://www.rev-belgium.org/downloads/voix00.pdf">ici</a> ou voir le site
+                                cliquer <a
+                                    href="http://reflexions.ulg.ac.be/cms/c_390091/fr/des-voix-dans-la-tete">ici</a></p>
                         </Col>
                         <Col l={4} s={6}>
-                            <img src="http://www.rev-belgium.org/images/voix00.jpg"/>
+                            <img alt="Article" src="http://www.rev-belgium.org/images/voix00.jpg"/>
                         </Col>
                     </Row>
                     <h4>Liens</h4>
-                    <ul>
-                        <li><a href="http://www.revfrance.org/spip.php?rubrique4">REV France</a></li>
-                        <li><a href="http://www.grepsy.ch/">Réseau suisse</a></li>
-                        <li><a href="http://www.revquebecois.org/">Réseau québequois</a></li>
-                        <li><a href="http://www.hearingvoicesusa.org/">Hearing Voice USA</a></li>
-                        <li><a href="https://www.facebook.com/Hearing.Voices.USA">Page Facebook de Hearing Voice
-                            USA</a>
-                        </li>
-                        <li><a href="http://www.autrelieu.be/fr/index.asp">Autrelieu</a></li>
-                        <li><a href="http://www.psytoyens.be/">Psytoyens</a></li>
-                        <li><a href="http://www.psycause.info/">Psycause</a></li>
-                        <li><a href="http://www.intervoiceonline.org/">InterVoice</a></li>
-                        <li><a href="http://www.hearing-voices.org/">Hearing-voices</a></li>
-                    </ul>
+                    <Row>
+                        <Col s={6}>
+                            <ul>
+                                <li><a href="http://www.revfrance.org/spip.php?rubrique4">REV France</a></li>
+                                <li><a href="http://www.grepsy.ch/">Réseau suisse</a></li>
+                                <li><a href="http://www.revquebecois.org/">Réseau québequois</a></li>
+                                <li><a href="http://www.hearingvoicesusa.org/">Hearing Voice USA</a></li>
+                                <li><a href="https://www.facebook.com/Hearing.Voices.USA">Page Facebook de Hearing Voice
+                                    USA</a></li>
+                            </ul>
+                        </Col>
+                        <Col s={6}>
+                            <ul>
+                                <li><a href="http://www.autrelieu.be/fr/index.asp">Autrelieu</a></li>
+                                <li><a href="http://www.psytoyens.be/">Psytoyens</a></li>
+                                <li><a href="http://www.psycause.info/">Psycause</a></li>
+                                <li><a href="http://www.intervoiceonline.org/">InterVoice</a></li>
+                                <li><a href="http://www.hearing-voices.org/">Hearing-voices</a></li>
+                            </ul>
+                        </Col>
+                    </Row>
                 </div>
             </div>
         )
