@@ -70,7 +70,7 @@ export default class Contact extends React.Component {
             });
             if(immediatelyAvailableReference.key){
                 this.refs.msg.state.value = "";
-                document.getElementById('input_2').value = "";
+                document.getElementById('inputchiant').value = "";
                 this.setState({send:true});
                 setTimeout(function(){this.setState({send: false});}.bind(this),2000);
             }
@@ -91,7 +91,7 @@ export default class Contact extends React.Component {
                                    ref="name"><Icon>account_circle</Icon></Input>
                             <Input s={12} label="Email" validate type='email'
                                    ref="mail"><Icon>mail</Icon></Input>
-                            <Input s={12} label="Votre Message"
+                            <Input id="inputchiant" s={12} label="Votre Message"
                                    ref="msg"><Icon>message</Icon></Input>
                             <Button type={"submit"} id="BtnForm" children
                                     waves='light'>Envoyer<Icon>send</Icon></Button>
