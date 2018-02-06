@@ -3,6 +3,7 @@ import {Row, Input, Icon, Button} from 'react-materialize';
 import Rebase from 're-base';
 import app from '../../Base';
 import Error from './Error';
+import Send from './Send';
 
 var base = Rebase.createClass(app.database());
 
@@ -17,6 +18,7 @@ export default class Contact extends React.Component {
                 message: ''
             },
             error: false,
+            send: false,
         };
         /*
                 this.SendMessage = this.SendMessage.bind(this);
@@ -56,6 +58,7 @@ export default class Contact extends React.Component {
             (message === "undefined" || message.trim() === "")) {
             console.log("erreur");
             this.setState({error: true});
+            setTimeout(function(){this.setState({error: false});}.bind(this),2000);
         } else {
 
             let immediatelyAvailableReference = base.push('contact', {
@@ -68,7 +71,8 @@ export default class Contact extends React.Component {
             if(immediatelyAvailableReference.key){
                 this.refs.msg.state.value = "";
                 document.getElementById('input_2').value = "";
-                this.setState({error:false});
+                this.setState({send:true});
+                setTimeout(function(){this.setState({send: false});}.bind(this),2000);
             }
         }
     }
@@ -77,6 +81,8 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div className="Container Form">
+                {this.state.error && <Error/>}
+                {this.state.send && <Send/>}
                 <h4 className="contact">Contact</h4>
                 <div className="containerForm">
                     <Row className="contactForm">
@@ -89,7 +95,6 @@ export default class Contact extends React.Component {
                                    ref="msg"><Icon>message</Icon></Input>
                             <Button type={"submit"} id="BtnForm" children
                                     waves='light'>Envoyer<Icon>send</Icon></Button>
-                            {this.state.error && <Error/>}
                         </form>
                     </Row>
                 </div>
