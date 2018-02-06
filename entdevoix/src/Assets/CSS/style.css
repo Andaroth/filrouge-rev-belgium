@@ -283,13 +283,14 @@ ul:not(.browser-default) li.accLi {
 
 #errorForm {
     background-color: #ED1936;
-    text-align: center;
-    border-radius: 5px;
-    color: #eeeeee;
+    display: flex;
     position: absolute;
     left: 0;
-    right: 0;
     top: 0;
+    right: 0;
+    color: #eeeeee;
+    margin: auto;
+    justify-content: center;
 }
 
 .errorTransition{
@@ -298,15 +299,29 @@ ul:not(.browser-default) li.accLi {
     transition-timing-function: ease-in-out;
 }
 
-#errorForm p{
-    text-align: center;
-    margin-top: 0;
-}
-
 #errorForm i{
-    padding-top: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
 }
 
+#sendForm i{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+#sendForm {
+    background-color: limegreen;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    color: #eeeeee;
+    margin: auto;
+    justify-content: center;
+}
 
 @media (max-width: 1300px) {
     .containerAcceuil {
