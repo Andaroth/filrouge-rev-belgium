@@ -9,6 +9,7 @@ import Events from './MainComponents/Events/Events';
 import History from './MainComponents/History/History';
 import Links from './MainComponents/Links/Links';
 import Footer from './MainComponents/Footer';
+import NotFound from './MainComponents/NotFound';
 import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom';
 import './Assets/CSS/style.css';
 import {Navbar} from 'react-materialize';
@@ -35,6 +36,7 @@ const Root = () => {
                         <Route exact path='/Events' component={Events}/>
                         <Route exact path='/History' component={History}/>
                         <Route exact path='/Links' component={Links}/>
+                        <Route component={NotFound} />
                     </Switch>
                 </div>
                 <Footer/>
