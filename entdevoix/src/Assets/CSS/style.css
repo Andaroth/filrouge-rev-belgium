@@ -14,9 +14,12 @@ body {
     min-height: 88vh;
 }
 
+.nav-wrapper a:focus{
+    background-color: rgba(0,0,0,0.1);
+}
+
 .nav-wrapper {
     background-color: #00E3A7;
-    color: black;
     font-weight: bold;
 }
 
@@ -85,6 +88,10 @@ body {
     background-attachment: fixed;
 }
 
+#About{
+    text-align: left;
+}
+
 #footer {
     background-color: #00E3A7;
     position: relative;
@@ -139,6 +146,11 @@ i .contactForm, .material-icons {
     margin-top: 5%;
     background-color: rgba(238, 238, 238, 0.7);
     text-align: justify;
+}
+
+.Container a:hover{
+    color: #00E3A7;
+    text-decoration: underline;
 }
 
 #titleAcc {
@@ -312,13 +324,13 @@ ul:not(.browser-default) li.accLi {
 }
 
 #sendForm {
-    background-color: limegreen;
+    background-color: #00E3A7;
     display: flex;
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
-    color: #eeeeee;
+    color: white;
     margin: auto;
     justify-content: center;
 }

@@ -4,7 +4,7 @@ export default class About extends React.Component {
     render() {
         return (
 <div className='backgroundAbout'>
-<div className="Container Form containerAcceuil Entendeurs">
+<div className="Container Form containerAcceuil Entendeurs" id="About">
     <h4>Qui sommes-nous ?</h4>
     <p>Le REV-Belgium, Réseau des Entendeurs de Voix de Belgique, s’inscrit dans un mouvement associatif qui se développe à travers le monde depuis près de 20 ans. Il a été créé à l’image du réseau français sur l’entente de voix revfrance et des autres
         réseaux francophones (suisse et québécois) ou anglophones hearing-voices ou intervoice, suite aux résultats des recherches et études de pionniers Marius Romme et Sandra Escher. Au sein du réseau qui réunit des personnes qui entendent des voix,
