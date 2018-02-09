@@ -14,7 +14,19 @@ body {
     min-height: 88vh;
 }
 
-.nav-wrapper a:focus{
+.nav-wrapper a.active{
+    background-color: rgba(0,0,0,0.1);
+}
+
+#Nav-Acc.active{
+    background-color: #00E3A7;
+}
+
+#Nav-Acc:focus{
+    background-color: rgba(0,0,0,0.1);
+}
+
+#Nav-Acc:hover{
     background-color: rgba(0,0,0,0.1);
 }
 

@@ -19,7 +19,7 @@ const Root = () => {
         <Router>
             <div id="test" >
                 <Navbar>
-                    <NavLink to="/">Accueil</NavLink>
+                    <NavLink id="Nav-Acc" to="/">Accueil</NavLink>
                     <NavLink to="/About">A propos</NavLink>
                     <NavLink to="/Entendeurs">Entendeurs</NavLink>
                     <NavLink to="/Events">Evenements</NavLink>
