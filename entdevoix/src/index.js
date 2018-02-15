@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import App from './App';
+// Components
 import About from './MainComponents/About/About';
 import Contact from './MainComponents/Contact/Contact';
 import Entendeurs from './MainComponents/Entendeurs/Entendeurs';
@@ -10,8 +11,11 @@ import History from './MainComponents/History/History';
 import Links from './MainComponents/Links/Links';
 import Footer from './MainComponents/Footer';
 import NotFound from './MainComponents/NotFound';
+// React Router
 import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom';
+// CSS
 import './Assets/CSS/style.css';
+// Materialize
 import {Navbar} from 'react-materialize';
 
 const Root = () => {
