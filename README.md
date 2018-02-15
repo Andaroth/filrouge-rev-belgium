@@ -1,24 +1,26 @@
 # filrouge-rev-belgium
 
 
-http://www.rev-belgium.org/
+Original page: http://www.rev-belgium.org/
 
-https://rev-belgium.000webhostapp.com/
+Landing page: https://rev-belgium.000webhostapp.com/
+
+Multi page: https://entendeurs-de-voix.firebaseapp.com
 
 
-## Objectifs projet: 
+## Objectifs projet:
 rendre le site visuellement attrayant et augmenter la fréquentation aux réunions de l'assossiation
 
-## Objectif site: 
+## Objectif site:
 informer et promouvoir les innitiatives de l’assossition
 
-## Objectifs association: 
+## Objectifs association:
 offrir de l’information, du soutien etde la compréhension aux personnes qui entendent des voix. ils organisent des groupes d’entendeurs de voix, qui ont montré leur efficacité à aider l’individu à retrouver son identité et reprendre sa vie en mains. Même parfois après des années de psychiatrie
 
-## Clients: 
+## Clients:
 REV_Belgium, association pour les entendeurs de voix.
 personnes de contact: Omar ,  Steeve , Jimmy
- 
+
 ## Public cible
 personnes entendant des voix et désireuses de parler de ce problème avec d'autres.
 
@@ -35,7 +37,7 @@ chaque onglet du site actuelle doit avoir une page avec un url propre.
 
 ## Dead Line
 
- - demain remise du cahier des charges 
+ - demain remise du cahier des charges
  - fin formation pour la fin du projet
 
 répartition du travail
