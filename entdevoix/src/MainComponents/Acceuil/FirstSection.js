@@ -2,9 +2,9 @@ import React from 'react';
 import {Button} from 'react-materialize';
 
 export default class FirstSection extends React.Component {
-    scrollDown() {
-        document.querySelector('.secondSec').scrollIntoView({ behavior: 'smooth' });
-    }
+    // scrollDown() {
+    //     document.querySelector('.secondSec').scrollIntoView({ behavior: 'smooth' });
+    // }
 
     render() {
         return (
@@ -36,7 +36,7 @@ export default class FirstSection extends React.Component {
                             les aiderait à accepter leurs voix. La discrimination et l’exclusion doivent cesser
                         </li>
                     </ul>
-                    <Button onClick={this.scrollDown} waves='light'>En savoir plus</Button>
+                    <Button node="a" href="#secondSec" waves='light'>En savoir plus</Button>
                 </section>
             </div>
         )

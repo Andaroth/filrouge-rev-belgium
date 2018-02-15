@@ -4,7 +4,7 @@ export default class SecondSection extends React.Component {
     render() {
         return (
             <div>
-                <section className="secondSec containerAcceuil">
+                <section id="secondSec" className="secondSec containerAcceuil scrollspy">
                     <h5>Une nouvelle approche</h5>
                     <p>Souvent, les dites hallucinations auditives ont conduit au diagnostic de “schizophrénie”.
                         Pourtant, il y a des vues contradictoires parmi les psychiatres, psychologues et les “entendeurs
