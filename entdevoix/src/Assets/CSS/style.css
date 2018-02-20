@@ -347,6 +347,13 @@ ul:not(.browser-default) li.accLi {
     justify-content: center;
 }
 
+.maxw {
+    width: 100% !important;
+}
+textarea.maxw {
+    min-height: 100px;
+}
+
 @media (max-width: 1300px) {
     .containerAcceuil {
         width: 90%;
