@@ -2,33 +2,59 @@ import React from 'react';
 import {Row, Col,Button} from 'react-materialize';
 import Rebase from 're-base';
 import app from '../../Base';
-import Error from './Error';
-import Send from './Send';
+import Mailist from './mailist';
 
-// var base = app.database();
+var base = Rebase.createClass(app.database());
+// app = la connection à la DB ;) 
 
 export default class Admin extends React.Component {
-    constructor(props) {
-        super(props);
-        var addr = app.database().ref("/");
-        console.log("addr:"+addr);
-        var child = addr.child("contact");
-        for (let i in child) {
-            console.log("i:"+i);
-        }
+    constructor() {
+        super();
+        this.state = {
+            pages:{},
+            events:{},
+            articles:{},
+            mails: {}
+        };        
     }
-
-    getmessage() {
-        // Find all dinosaurs whose names come before Pterodactyl lexicographically.
-        // var ref = base.ref("entendeurs-de-voix");
-        // ref.orderByKey().on("contact", function(snapshot) {
-        //     var mailList = snapshot.key;
-        // console.log("mellist:"+ref);
+    componentDidMount() {
+        // Pages list :
+        // var addr = app.database().ref("/pages");
+        // let these = this;
+        // addr.on("value", function(snap) {
+        //     console.log( "val="+JSON.stringify(snap.val()) );
+        //     these.setState({pages:snap.val()});
         // });
-        
+
+        // Events list :
+        // var addr = app.database().ref("/events");
+        // let these = this;
+        // addr.on("value", function(snap) {
+        //     console.log( "val="+JSON.stringify(snap.val()) );
+        //     these.setState({events:snap.val()});
+        // });
+
+        // Articles list :
+        // var addr = app.database().ref("/articles");
+        // let these = this;
+        // addr.on("value", function(snap) {
+        //     console.log( "val="+JSON.stringify(snap.val()) );
+        //     these.setState({articles:snap.val()});
+        // });
+
+        // Mail list :
+        var addr = app.database().ref("/contact");
+        let these = this;
+        addr.on("value", function(snap) {
+            console.log( "val="+JSON.stringify(snap.val()) );
+            these.setState({mails:snap.val()});
+        });
     }
 
     render() {
+        if(this.state.mails){
+            console.log("boulette:"+JSON.stringify(this.state.mails));
+        }
         return (
             <div className='backgroundLinks'>
                 <div className="Container Form containerAcceuil Entendeurs">
@@ -305,73 +331,7 @@ export default class Admin extends React.Component {
                                 </ul>
                             </div>
                         </div>
-                        <div id="mails" className="col s12">
-                            <h5>Liste des mails reçus</h5>
-                            <div className="container">
-                                <ul className="collapsible" data-collapsible="accordion">
-                                    <li>
-                                        <div className="collapsible-header">First </div>
-                                        <div className="collapsible-body">
-                                        <form action="#">
-                                            <textarea className="materialize-textarea longtextadmin" name="content" cols="30" rows="30">
-                                            </textarea>
-                                            <Row className="center-align">
-                                                <Col s={4}>
-                                                    <Button waves="light"><i className="material-icons">delete</i></Button>
-                                                </Col>
-                                                <Col s={4}>
-                                                    <Button waves="light"><i className="material-icons">cancel</i></Button>
-                                                </Col>
-                                                <Col s={4}>
-                                                    <Button waves="light"><i className="material-icons">send</i></Button>
-                                                </Col>
-                                            </Row>
-                                        </form>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="collapsible-header">First </div>
-                                        <div className="collapsible-body">
-                                        <form action="#">
-                                            <textarea className="materialize-textarea longtextadmin" name="content" cols="30" rows="30">
-                                            </textarea>
-                                            <Row className="center-align">
-                                                <Col s={4}>
-                                                    <Button waves="light"><i className="material-icons">delete</i></Button>
-                                                </Col>
-                                                <Col s={4}>
-                                                    <Button waves="light"><i className="material-icons">cancel</i></Button>
-                                                </Col>
-                                                <Col s={4}>
-                                                    <Button waves="light"><i className="material-icons">send</i></Button>
-                                                </Col>
-                                            </Row>
-                                        </form>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="collapsible-header">First </div>
-                                        <div className="collapsible-body">
-                                        <form action="#">
-                                            <textarea className="materialize-textarea longtextadmin" name="content" cols="30" rows="30">
-                                            </textarea>
-                                            <Row className="center-align">
-                                                <Col s={4}>
-                                                    <Button waves="light"><i className="material-icons">delete</i></Button>
-                                                </Col>
-                                                <Col s={4}>
-                                                    <Button waves="light"><i className="material-icons">cancel</i></Button>
-                                                </Col>
-                                                <Col s={4}>
-                                                    <Button waves="light"><i className="material-icons">send</i></Button>
-                                                </Col>
-                                            </Row>
-                                        </form>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <Mailist list={this.state.mails} />
                     </Row>
                 </div>
             </div>
