@@ -347,6 +347,11 @@ ul:not(.browser-default) li.accLi {
     justify-content: center;
 }
 
+.longtextadmin {
+    max-height: 300px !important;
+    overflow-y: scroll !important;
+}
+
 @media (max-width: 1300px) {
     .containerAcceuil {
         width: 90%;

@@ -63,6 +63,7 @@ export default class Contact extends React.Component {
 
             let immediatelyAvailableReference = base.push('contact', {
                 data: {
+                    type: "mail",
                     nom: name,
                     email: email,
                     message: message

@@ -9,6 +9,7 @@ import Entendeurs from './MainComponents/Entendeurs/Entendeurs';
 import Events from './MainComponents/Events/Events';
 import History from './MainComponents/History/History';
 import Links from './MainComponents/Links/Links';
+import Admin from './MainComponents/Admin/Admin';
 import Footer from './MainComponents/Footer';
 import NotFound from './MainComponents/NotFound';
 // React Router
@@ -40,6 +41,7 @@ const Root = () => {
                         <Route exact path='/Events' component={Events}/>
                         <Route exact path='/History' component={History}/>
                         <Route exact path='/Links' component={Links}/>
+                        <Route exact path='/Admin' component={Admin}/>
                         <Route component={NotFound} />
                     </Switch>
                 </div>
