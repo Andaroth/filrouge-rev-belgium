@@ -1,7 +1,33 @@
 import React from 'react';
 import {Row, Col,Button} from 'react-materialize';
+import Rebase from 're-base';
+import app from '../../Base';
+import Error from './Error';
+import Send from './Send';
 
-export default class Liens extends React.Component {
+// var base = app.database();
+
+export default class Admin extends React.Component {
+    constructor(props) {
+        super(props);
+        var addr = app.database().ref("/");
+        console.log("addr:"+addr);
+        var child = addr.child("contact");
+        for (let i in child) {
+            console.log("i:"+i);
+        }
+    }
+
+    getmessage() {
+        // Find all dinosaurs whose names come before Pterodactyl lexicographically.
+        // var ref = base.ref("entendeurs-de-voix");
+        // ref.orderByKey().on("contact", function(snapshot) {
+        //     var mailList = snapshot.key;
+        // console.log("mellist:"+ref);
+        // });
+        
+    }
+
     render() {
         return (
             <div className='backgroundLinks'>
