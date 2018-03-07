@@ -1,23 +1,20 @@
 import React from 'react';
-import {Row, Col,Button} from 'react-materialize';
-import Rebase from 're-base';
-import app from '../../Base';
-import Mailist from './mailist';
+import {Row,Col,Button} from 'react-materialize';
+import Mailist from './Mailist';
 
-var base = Rebase.createClass(app.database());
 // app = la connection à la DB ;) 
 
 export default class Admin extends React.Component {
     constructor() {
         super();
         this.state = {
-            pages:{},
-            events:{},
-            articles:{},
-            mails: {}
+            pages:{a:{nom:'Chargement ...',message:''}},
+            events:{a:{nom:'Chargement ...',message:''}},
+            articles:{a:{nom:'Chargement ...',message:''}},
+            mails: {a:{nom:'Chargement ...',message:''}}
         };        
     }
-    componentDidMount() {
+    componentWillMount() {
         // Pages list :
         // var addr = app.database().ref("/pages");
         // let these = this;
@@ -41,20 +38,9 @@ export default class Admin extends React.Component {
         //     console.log( "val="+JSON.stringify(snap.val()) );
         //     these.setState({articles:snap.val()});
         // });
-
-        // Mail list :
-        var addr = app.database().ref("/contact");
-        let these = this;
-        addr.on("value", function(snap) {
-            console.log( "val="+JSON.stringify(snap.val()) );
-            these.setState({mails:snap.val()});
-        });
     }
 
     render() {
-        if(this.state.mails){
-            console.log("boulette:"+JSON.stringify(this.state.mails));
-        }
         return (
             <div className='backgroundLinks'>
                 <div className="Container Form containerAcceuil Entendeurs">
@@ -331,7 +317,14 @@ export default class Admin extends React.Component {
                                 </ul>
                             </div>
                         </div>
-                        <Mailist list={this.state.mails} />
+                        <div id="mails" className="col s12">
+                            <h5>Liste des mails reçus</h5>
+                            <div className="container">
+                                <ul className="collapsible" data-collapsible="accordion">
+                                    <Mailist />
+                                </ul>
+                            </div>
+                        </div>
                     </Row>
                 </div>
             </div>
