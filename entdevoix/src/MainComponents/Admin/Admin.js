@@ -2,7 +2,6 @@ import React from 'react';
 import {Row,Col,Button} from 'react-materialize';
 import Pages from './Pages';
 import Events from './Events';
-import Links from './Links';
 import Articles from './Articles';
 import Mailist from './Mailist';
 

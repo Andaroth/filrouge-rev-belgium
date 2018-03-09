@@ -12,6 +12,7 @@ import Links from './MainComponents/Links/Links';
 import Admin from './MainComponents/Admin/Admin';
 import Footer from './MainComponents/Footer';
 import NotFound from './MainComponents/NotFound';
+import Sudo from './MainComponents/SuperAdmin/Super';
 // React Router
 import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom';
 // CSS
@@ -42,6 +43,7 @@ const Root = () => {
                         <Route exact path='/History' component={History}/>
                         <Route exact path='/Links' component={Links}/>
                         <Route exact path='/Admin' component={Admin}/>
+                        <Route exact path='/Sudo' component={Sudo}/>
                         <Route component={NotFound} />
                     </Switch>
                 </div>

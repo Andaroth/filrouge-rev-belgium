@@ -8,15 +8,15 @@ export default class Mailist extends React.Component {
         this.state = {mails:{}};
     }
 
-    componentWillMount(){
-        console.log("will mount");
-        this.getMailList();
-    }
+    // componentWillMount(){
+    //     console.log("will mount");
+    //     this.getMailList();
+    // }
 
-    componentDidUpdate() {
-        console.log("did mount");
-        this.renderMailList(this.state);
-    }
+    // componentDidUpdate() {
+    //     console.log("did update");
+    //     this.renderMailList(this.state);
+    // }
 
     getMailList() {
         console.log("get mail list");
@@ -61,24 +61,25 @@ export default class Mailist extends React.Component {
             console.log("["+ivalue+"]message:"+objList.mails[ivalue].message);
             console.log("["+ivalue+"]email:"+objList.mails[ivalue].email);
             console.log("------------------------------------------------")
-            return(
-                <li key={i}>
-                    <div className="collapsible-header">{objList.mails[ivalue].nom}</div>
-                    <div className="collapsible-body">
-                        <Row>{objList.mails[ivalue].message}</Row>
-                        <form action="#">
-                            <Row className="center-align">
-                                <Col s={6}>
-                                    <Button waves="light"><i className="material-icons">delete</i></Button>
-                                </Col>
-                                <Col s={6}>
-                                    <Button waves="light"><i className="material-icons">cancel</i></Button>
-                                </Col>
-                            </Row>
-                        </form>
-                    </div>
-                </li>
-            ) // return end
+            // return(
+            //     <li key={i}>
+            //         <div className="collapsible-header">{objList.mails[ivalue].nom}</div>
+            //         <div className="collapsible-body">
+            //             <Row>{objList.mails[ivalue].message}</Row>
+            //             <form action="#">
+            //                 <Row className="center-align">
+            //                     <Col s={6}>
+            //                         <Button waves="light"><i className="material-icons">delete</i></Button>
+            //                     </Col>
+            //                     <Col s={6}>
+            //                         <Button waves="light"><i className="material-icons">cancel</i></Button>
+            //                     </Col>
+            //                 </Row>
+            //             </form>
+            //         </div>
+            //     </li>
+            // ) // return end
+            return("<li>mails...</li>")
         }); // map end
     }
 

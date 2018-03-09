@@ -1,82 +1,168 @@
 {
-    0:{
-        "title":"\"Prêter l'oreille à ses voix\" par Matthieu Cornélis, En Marche, 20 Octobre 2016",
-        "content":"
-            <div class=\"col l8 s6\">
-                <p>Entendre des voix est traditionnellement
-                    présenté comme le symptôme d'une maladie mentale
-                    - singulièrement la schizophrénie - qu'il faut
-                    à tout prix supprimer. Selon certains thérapeutes,
-                    cette action radicale est rarement efficace
-                    car elle enferme la personne dans une situation
-                    sans issue et l'isole dans sa souffrance.</p>
-                <p>Pour lire l'article cliquer <a
-                    href=\"http://www.enmarche.be/preter-l-oreille-a-ses-voix.htm?from=sante\">ici</a></p>
-            </div>
-            <div class=\"col l4 s6\">
-                <img alt=\"Article\" src=\"http://www.rev-belgium.org/images/en_marche.jpg\"/>
-
-            </div>
-        "
+    "pages":{
+        "À propos":"<h4>Qui sommes-nous ?</h4><p>Le REV-Belgium, Réseau des Entendeurs de Voix de Belgique, s’inscrit dans un mouvement associatif qui se développe à travers le monde depuis près de 20 ans. Il a été créé à l’image du réseau français sur l’entente de voix revfrance et des autres réseaux francophones (suisse et québécois) ou anglophones hearing-voices ou intervoice, suite aux résultats des recherches et études de pionniers Marius Romme et Sandra Escher. Au sein du réseau qui réunit des personnes qui entendent des voix, des sympathisants mais aussi des professionnels de la santé, les voix ne sont pas considérées comme le symptôme d’une maladie mentale qu’il faudrait supprimer, mais comme une expérience humaine qui n’est pas en soi un problème. En effet, de nombreuses personnes entendent des voix sans pour autant passer par la psychiatrie. Par contre, cette expérience peut être très éprouvante, engendrant angoisse et solitude. C’est pourquoi le REV a développé des groupes d’entraide dans un climat de confiance et de respect des croyances de chacun. Il y est possible d’apprendre à mieux vivre avec ses voix et faire face aux difficultés quotidiennes. Plusieurs groupes se réunissent tous les quinze jours dans différentes villes (Bruxelles, Liège, Namur, Mons). Si vous entendez des voix, ou si vous connaissez des personnes qui entendent des voix et en sont troublées, ce réseau peut vous aider.</p><h4>Nos objectifs</h4><p>Nous vous offrons de l’information, notre soutien et compréhension aux personnes qui entendent des voix. Nous organisons des groupes d’entendeurs de voix, qui ont montré leur efficacité à aider l’individu à retrouver son identité et reprendre sa vie en mains. Même parfois après des années de psychiatrie. </p><h4>Charte d'éthique</h4><p>Le REV-Belgium a adopté ​une charte d'éthique à la quelle les organisateurs des groupes de parole adhèrent, cette charte est aussi distribuée aux entendeurs de voix vous pouvez consulter <a href=\"http://www.rev-belgium.org/downloads/charte.pdf\">la charte</a>.</p><h4>Financement</h4><p>L'organisation d'événements, de colloques, de conférences et de réunions de groupes engendre des frais. Une ASBL a été créée en février 2014, dont voici les <a href=\"http://www.rev-belgium.org/downloads/charte.pdf\">statuts</a>. Votre soutien et vos dons seront toujours les bienvenus sur notre compte : <b>BE89 0017 3122 5785.</b></p>",
+        "Entendeurs":"<h4>Entendeurs</h4><h5>Définition</h5><p>Il s’agit de groupes d’entraide qui permettent à ceux qui entendent des voix de sortir de leur isolement pour partager en toute liberté et sans préjugé leurs expériences. Ils sont facilités par des personnes qui entendent des voix elles-même ou qui soutiennent activement la démarche du REV.</p><h5>Pourquoi ?</h5><p>Si les voix ne sont pas considérées comme un symptôme de maladie mentale à supprimer, elles peuvent être parfois une expérience éprouvante. La participation à un groupe permet:</p><ul className=\"accUl\"><li className=\"accLi\">de sortir de la stigmatisation du statut de schizophrène auquel donne souvent lieu l’entente de voix pour retrouver une identité d’individu à part entière</li><li className=\"accLi\">d’apprendre à mieux vivre avec ses voix grâce au partage des expériences</li><li className=\"accLi\">de réfléchir ensemble sur le sens de ces voix qui, si elles ne sont pas en soi un problème, peuvent être les messagères d’un problème. </li></ul><h5>Comment rejoindre un groupe ?</h5><p>Il suffit de contacter par téléphone ou par mail le facilitateur du groupe que vous souhaitez rejoindre, ou de vous présenter spontanément à une rencontre.</p><section id=\"adressBtn\"><h5>Nos Adresses</h5><Button onClick={this.showAdress.bind(this)} floating className='#00E3A7' waves='light' icon='help_outline'/></section>{this.state.showDiv && <Adress/>}",
+        "Evenements":"<h4>Events</h4><section id=\"Event1\"><h5>Le 8ème congrès international des entendeurs de voix</h5><p>Le Congrès mondial sur l’entente de voix est organisé chaque année depuis 2009 conjointement par Intervoice et un Réseau national sur l’entente de voix. Les précédents pays ayant accueilli ce congrès sont les Pays-Bas, le Royaume Uni, l’Italie, l’Australie, la Grèce et l’Espagne. En 2017, il se tiendra aux Etats-Unis.<br/>Du 19 au 22 octobre 2016, le REV France a accueilli ce Congrès qui a rassemblé plus de 300 personnes de tous horizons et convictions autour d’une perspective commune : Changer l’Histoire en retissant nos histoires !</p><img id=\"imgEvent1\" alt=\"Affiche evenement\" src=\"http://www.jim.fr/e-docs/00/02/6B/23/carac_photo_1.jpg\"/></section><section id=\"Event2\"><h5>Le 9ème congrès international des entendeurs de voix</h5><p>Entendre des voix Etats-Unis est fier de présenter le 9e Congrès mondial Hearing Voices : Une révolution de Unseen voix. Le Congrès aura lieu du 16 au 18 Août 2017 à l' Université de Boston à Boston, Massachusetts, États-Unis.<br/>Plus d'infos sur leur site</p><img id=\"imgEvent2\" alt=\"Affiche evenement\" src={Oreille}/></section><section id=\"Event3\"><h5>J’entends des voix !</h5><p>Le Réseau « Entendre-des-Voix » REV-Belgium vous invite à venir partager vos interrogations et témoignages autour d’une expérience encore taboue et méconnue, l’entente de voix.</p></section><section id=\"Event4\"><h5>Pourquoi une conférence-partage?</h5><p>Au-delà des groupes d’entraide, le REV-Belgium considère qu’il est important de faire évoluer le regard porté sur ces phénomènes encore largement facteurs de stigmatisation et d’exclusion. Peut-être vous, ou un proche, faites cette expérience sans savoir à qui en parler ?</p><ul className=\"accUl\"><li className=\"accLi\">avez-vous des questions sans personne avec qui les partager ?</li><li className=\"accLi\">avez-vous un témoignage à apporter ?</li><li className=\"accLi\">êtes-vous tout simplement curieux d’en savoir plus sur ces phénomènes et l’approche développée au sein du REV ?</li></ul><p>Quelle que soit votre démarche, vous êtes bienvenu.</p></section><h5>Comment s’inscrire ?</h5><p>Venez tout simplement…</p><img id=\"EventImg\" alt=\"union\" src=\"https://rev-belgium.000webhostapp.com/images/apropos.png\"/>",
+        "Histoire":"<h4>Histoire</h4><Row><Col l={6} s={12}><p>Depuis longtemps, il est reconnu qu’un pourcentage élevé de la population générale a un jour ou l’autre fait l’expérience d’une entente de voix, parfois brève et occasionnelle, surtout en période de deuil, divorce ou de séparation. C’est aussi le cas pour les personnes étant dans des circonstances extrêmes, par exemple, 80 pour cent de personnes ayant subi une torture ont halluciné pendant leur épreuve (Amnesty International) ; le phénomène est également constaté chez les navigateurs de longue distance (Bennett, 1972). Dans de tels cas, il n'existe aucune preuve de la présence de la maladie mentale et c’est souvent bien le contraire. Une recherche épidémiologique plus récente à Baltimore, sur une population de 15.000 personnes, a révélé que10 - 15 pour cent des personnes interrogées ont déclaré avoir entendu des voix sur une longue période de temps, et seulement un tiers des personnes interrogées ont déclaré avoir subi des effets négatifs (Y. Tien).</p></Col><Col l={6} s={12}><img className=\"book livre\" src={Book} alt=\"livre\"/><p float=\"right\">Des recherches ultérieures plus poussées en 1991 ont révélé que de nombreux cas d’entente de voix ne répondaient pas aux critères d'un diagnostic psychiatrique (Eaton). De manière significative, les recherches plus récentes du Prof. Romme, sur des entendeurs de voix, patients ou non-patients ont montré que les deux groupes de même nombre, entendent des voix négatives et positives. La différence réside principalement dans la façon dont les deux groupesréagissent à l’entente de voix ; les non- patients n’ayant pas peur des voix ; ces derniers ont été beaucoup moins bouleversé que les patients.</p><Button onClick={this.ShowMore.bind(this)} id=\"lireMore\">Lire la suite<Icon>small>keyboard_arrow_right</Icon></Button></Col></Row>{this.state.showHis && <Voice />}<h4>Les fondateurs</h4><Row><Col s={12} l={6}><h5>Marius Romme</h5><img className=\"tete book\" alt=\"Marius\" src={Marius}/><p>Psychiatre néerlandais, est surtout connu pour son travail sur l’entente de voix (hallucinations auditives), il est le fondateur et le principal théoricien du mouvement sur l’entente de voix.De 1974 à 1999, il a été professeur de psychiatrie, spécialisé en psychiatrie sociale, à la faculté de médecine de l’Université de Maastricht et consultant au Centre de santé mentale communautaire de Maastricht. Pour Marius Romme, les délires, entendre des voix et avoirdes hallucinations, ne sont pas liés à une maladie, mais peuvent être des réactions à des événements traumatiques et troublants dans la vie.</p></Col><Col s={12} l={6}><h5>Sandra Escher</h5><img className=\"tete book\" alt=\"Sandra\" src={Sandra}/><p>Elle est formée à l'École de journalisme de Utrecht, ensuite, elle travaille au            département de psychiatrie sociale à l’Université de Maastricht. Elle travaille en collaboration avec Marius Romme sur le projet des ententes de voix. Elle a organisé huit congrès annuels sur le sujet et aidé nombre d’entendeurs de voix à écrire leurs expériences. Elle a passé son doctorat avec son son étude sur 80 enfants entendeurs de voix et a écrit « Children hearing voices ». Ensemble, ils ont publié de nombreux livres dont « Making sense of voices : a guide for mental health professionals working with voices hearers » et « Accepting voices » ou encore « Living with voices : 50 stories of recovery ».</p> </Col> </Row> <h5>Personnages célèbres qui entendaient des voix :</h5> <p>Socrate, Moïse, Mohammed, Jeanne d’Arc, Ste Thérèse d’Avila, Amélie Nothomb, Zinedine Zidane, Swedenborg, Carl Jung, Anthony Hopkins, Gandhi et bien d’autres encore.<br/> Vous pouvez consulter <a href=\"http://www.rev-belgium.org/downloads/express.pdf\" ref=\"external\" alt=\"pdf\">un article paru dans l'Express</a></p>"
     },
-    1:{
-        "title":"World Hearing Voices Congress, Madrid, 2015",
-        "content":"
-            <div class=\"col l4 s6\">
-                <img alt=\"Article\" src=\"http://www.rev-belgium.org/images/madrid2015.jpg\"/>
-            </div>
-            <div class=\"col l8 s6\">
-                <p>
-                    Un de nos membres, Jean-Marc Priels,
-                    a participé au 7ème congrès mondial
-                    des réseaux d'entendeurs de voix
-                    au World Hearing Voices Congress
-                    qui s'est tenu à Madrid les 6-7 novembre 2015.
-                    Il nous propose ici son compte-rendu;
-                    nous l'en remercions.</p>
-                <p>Pour lire l'article cliquer <a
-                    href=\"http://www.rev-belgium.org/downloads/Intervoices_2015.pdf\">ici</a></p>
-            </div>
-        "
+    "contact":{
+        "-L4e8MaKQ15I4NlhcYik" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "Test reussite?",
+            "nom" : "Thomas Point"
+        },
+        "-L4e8bKIlMktSpri4qd2" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test",
+            "nom" : "Thomas Point"
+        },
+        "-L4eAs2ISNEHTeTC0PGJ" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test",
+            "nom" : "Thomas Point"
+        },
+        "-L4eB9D66el_Wbm8fY7w" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test",
+            "nom" : "Thomas Point"
+        },
+        "-L4eBEcNrc9O2VVB66VS" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test",
+            "nom" : "Thomas Point"
+        },
+        "-L4eD79eUxdbvD_PNxn5" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test sur mobile",
+            "nom" : "Thomas Point"
+        },
+        "-L4eDLGCaratuTXfN46L" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test mobile",
+            "nom" : "Thomas Point"
+        },
+        "-L4eDQGiiEp3Ik4gPxfJ" : {
+            "email" : "test01@gmail.com",
+            "message" : "test",
+            "nom" : "Test01"
+        },
+        "-L4foj8AVa628AGm5s0y" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "Notification",
+            "nom" : "Thomas Point"
+        },
+        "-L4fqXeUG5_n7SRrxa5q" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "Bonjour Delphine",
+            "nom" : "Thomas Point"
+        },
+        "-L4fqZ3VH7GwlA6nSdeC" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "notif",
+            "nom" : "Thomas Point"
+        },
+        "-L4jVaSoNz2xlUpPfiDL" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "dada",
+            "nom" : "Thomas Point"
+        },
+        "-L4jj65moe2Fj0A5v3y8" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test mobile",
+            "nom" : "Thomas Point"
+        },
+        "-L4oxrstveoEtCmd4FhP" : {
+            "email" : "jesuistest@gmail.com",
+            "message" : "Je suis un test.",
+            "nom" : "Jesuistest"
+        },
+        "-L4ti--zWDFd9WeilEMD" : {
+            "email" : "alexandre@becode.org",
+            "message" : "yolo, quoi ",
+            "nom" : "jojo"
+        },
+        "-L4togYHd9Yr8AP40YNg" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "background-color",
+            "nom" : "Thomas Point"
+        },
+        "-L4tokyRdyKMS5okT5ri" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test mobile",
+            "nom" : "Thomas Point"
+        },
+        "-L4tong2CWYTNwcJ8Xw-" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test mobile",
+            "nom" : "Thomas Point"
+        },
+        "-L4twQ9ILAXWCnYIqB9F" : {
+            "email" : "thomaspoint@gmail.com",
+            "message" : "test",
+            "nom" : "Thomas Point"
+        },
+        "-L5FG_ugJoNm70fFMp8x" : {
+            "email" : "th@gmail.com",
+            "message" : "Terr mobile",
+            "nom" : "Thomas"
+        },
+        "-L5OYk262lLiwumxXBlP" : {
+            "email" : "ax.fiolle@gmail.com",
+            "message" : "test",
+            "nom" : "Axel"
+        },
+        "-L5OYlUHarE9FNqnoFiS" : {
+            "email" : "ax.fiolle@gm",
+            "message" : "regerg",
+            "nom" : "Axel"
+        },
+        "-L5nOKfWGM2soglrpPe7" : {
+            "email" : "ax.fiolle@gmail.com",
+            "message" : "Ca marche ?",
+            "nom" : "Axel Test"
+        },
+        "-L5nd9UDRAQw9tz9X8nc" : {
+            "email" : "ax.fiolle@gmail.test",
+            "message" : "test test test",
+            "nom" : "Axel Test"
+        },
+        "-L73e5TcVy9P8FyooKEB" : {
+            "content" : "<div class=\"col l8 s6\">                 <p>Entendre des voix est traditionnellement                     présenté comme le symptôme d'une maladie mentale                     - singulièrement la schizophrénie - qu'il faut                     à tout prix supprimer. Selon certains thérapeutes,                     cette action radicale est rarement efficace                     car elle enferme la personne dans une situation                     sans issue et l'isole dans sa souffrance.</p>                 <p>Pour lire l'article cliquer <a                     href=\"http://www.enmarche.be/preter-l-oreille-a-ses-voix.htm?from=sante\">ici</a></p>             </div>             <div class=\"col l4 s6\">                 <img alt=\"Article\" src=\"http://www.rev-belgium.org/images/en_marche.jpg\"/>              </div>",
+            "title" : "\"Prêter l'oreille à ses voix\" par Matthieu Cornélis, En Marche, 20 Octobre 2016"
+        },
+        "-L73eFLYwKegsX79_h00" : {
+            "content" : "<div class=\"col l8 s6\">                 <p>Entendre des voix est traditionnellement                     présenté comme le symptôme d'une maladie mentale                     - singulièrement la schizophrénie - qu'il faut                     à tout prix supprimer. Selon certains thérapeutes,                     cette action radicale est rarement efficace                     car elle enferme la personne dans une situation                     sans issue et l'isole dans sa souffrance.</p>                 <p>Pour lire l'article cliquer <a                     href=\"http://www.enmarche.be/preter-l-oreille-a-ses-voix.htm?from=sante\">ici</a></p>             </div>             <div class=\"col l4 s6\">                 <img alt=\"Article\" src=\"http://www.rev-belgium.org/images/en_marche.jpg\"/>              </div>",
+            "title" : "\"Prêter l'oreille à ses voix\" par Matthieu Cornélis, En Marche, 20 Octobre 2016"
+        }
     },
-    2:{
-        "title":"Un article de Philippe LAMBERT, publié dans la revue Athena (n°311, mai 2015)",
-        "content":"
-            <div class=\"col l4 s6\">
-                <img alt=\"Article\" src=\"http://www.rev-belgium.org/images/athena311.jpg\"/>
-            </div>
-            <div class=\"col l8 s6\">
-                <p>Entendre des voix est traditionnellement
-                    présenté comme le symptôme d'une maladie mentale
-                    - singulièrement la schizophrénie - qu'il faut
-                    à tout prix supprimer. Selon certains thérapeutes,
-                    cette action radicale est rarement efficace
-                    car elle enferme la personne dans une situation
-                    sans issue et l'isole dans sa souffrance.</p>
-                <p>Pour lire l'article cliquer <a
-                    href=\"http://www.rev-belgium.org/downloads/athena311.pdf\">ici</a></p>
-            </div>
-        "
+    "articles":{
+        "html":"<h4>Émission radio</h4><p>Lundi 16 Février 2015 à 17h sur Radio Panik (105.4 FM), l'émission Psylence Radio accueillait le REV-Belgium. Aujourd’hui, l’équipe de PsylenceRadio se transforme en vendeurs de REV. Une petite voix me dit que vous pensez que l’orthographe se perd. Détrompez-vous ! Le REV, ce sont les initiales du Réseau des Entendeurs de Voix. Groupe d’entraide mais pas que, c’est aussi un réseau porteur de voix (tiens ! Encore elles ?) afin de faire évoluer les regards sur ces phénomènes souvent stigmatisés ou facteurs d’exclusion. \"Quelle voix de rev\" (Radio Panik ~ Psylence 2015)</p><div><audio src=\"http://www.rev-belgium.org/downloads/psylence.mp3\" controls=\"\"></audio></div>",
+        "0":{
+            "title":"\"Prêter l'oreille à ses voix\" par Matthieu Cornélis, En Marche, 20 Octobre 2016",
+            "content":"<div class=\"col l8 s6\"> <p>Entendre des voix est traditionnellement présenté comme le symptôme d'une maladie mentale - singulièrement la schizophrénie - qu'il faut à tout prix supprimer. Selon certains thérapeutes, cette action radicale est rarement efficace car elle enferme la personne dans une situation sans issue et l'isole dans sa souffrance.</p> <p>Pour lire l'article cliquer <a href=\"http://www.enmarche.be/preter-l-oreille-a-ses-voix.htm?from=sante\">ici</a></p></div><div class=\"col l4 s6\"><img alt=\"Article\" src=\"http://www.rev-belgium.org/images/en_marche.jpg\"/></div>"
+        },
+        "1":{
+            "title":"World Hearing Voices Congress, Madrid, 2015",
+            "content":"<div class=\"col l4 s6\"><img alt=\"Article\" src=\"http://www.rev-belgium.org/images/madrid2015.jpg\"/> </div> <div class=\"col l8 s6\"> <p> Un de nos membres, Jean-Marc Priels, a participé au 7ème congrès mondial des réseaux d'entendeurs de voix au World Hearing Voices Congress qui s'est tenu à Madrid les 6-7 novembre 2015. Il nous propose ici son compte-rendu; nous l'en remercions.</p> <p>Pour lire l'article cliquer <a href=\"http://www.rev-belgium.org/downloads/Intervoices_2015.pdf\">ici</a></p> </div> "
+        },
+        "2":{
+            "title":"Un article de Philippe LAMBERT, publié dans la revue Athena (n°311, mai 2015)",
+            "content":" <div class=\"col l4 s6\"> <img alt=\"Article\" src=\"http://www.rev-belgium.org/images/athena311.jpg\"/> </div> <div class=\"col l8 s6\"> <p>Entendre des voix est traditionnellement présenté comme le symptôme d'une maladie mentale - singulièrement la schizophrénie - qu'il faut à tout prix supprimer. Selon certains thérapeutes, cette action radicale est rarement efficace car elle enferme la personne dans une situation sans issue et l'isole dans sa souffrance.</p> <p>Pour lire l'article cliquer <a href=\"http://www.rev-belgium.org/downloads/athena311.pdf\">ici</a></p> </div> "
+        },
+        "3":{
+            "title":"Un autre article de Philippe LAMBERT, publié sur le site Réflexions (juin 2015)",
+            "content":" <div class=\"col l8 s6\"> <p>Entendre des voix est traditionnellement présenté comme le symptôme d'une maladie mentale - singulièrement la schizophrénie - qu'il faut à tout prix supprimer. Selon certains thérapeutes, cette action radicale est rarement efficace car elle enferme la personne dans une situation sans issue et l'isole dans sa souffrance.</p> <p>Pour lire l'article cliquer <a href=\"http://www.rev-belgium.org/downloads/voix00.pdf\">ici</a> ou voir le site cliquer <a href=\"http://reflexions.ulg.ac.be/cms/c_390091/fr/des-voix-dans-la-tete\">ici</a></p> </div> <div class=\"col l4 s6\"> <img alt=\"Article\" src=\"http://www.rev-belgium.org/images/voix00.jpg\"/> </div> "
+        }
     },
-    3:{
-        "title":"Un autre article de Philippe LAMBERT, publié sur le site Réflexions (juin 2015)",
-        "content":"
-            <div class=\"col l8 s6\">
-                <p>Entendre des voix est traditionnellement
-                    présenté comme le symptôme d'une maladie mentale
-                    - singulièrement la schizophrénie - qu'il faut
-                    à tout prix supprimer. Selon certains thérapeutes,
-                    cette action radicale est rarement efficace
-                    car elle enferme la personne dans une situation
-                    sans issue et l'isole dans sa souffrance.</p>
-                <p>Pour lire l'article cliquer <a
-                    href=\"http://www.rev-belgium.org/downloads/voix00.pdf\">ici</a> ou voir le site
-                    cliquer <a
-                        href=\"http://reflexions.ulg.ac.be/cms/c_390091/fr/des-voix-dans-la-tete\">ici</a></p>
-            </div>
-            <div class=\"col l4 s6\">
-                <img alt=\"Article\" src=\"http://www.rev-belgium.org/images/voix00.jpg\"/>
-            </div>
-        "
+    "events":{
+        "html":"<section id=\"Event3\"><h5>J’entends des voix !</h5><p>Le Réseau « Entendre-des-Voix » REV-Belgium vous invite à venir partager vos interrogations et témoignages autour d’une expérience encore taboue et méconnue, l’entente de voix.</p></section><section id=\"Event4\"><h5>Pourquoi une conférence-partage?</h5><p>Au-delà des groupes d’entraide, le REV-Belgium considère qu’il est important de faire évoluer le regard porté sur ces phénomènes encore largement facteurs de stigmatisation et d’exclusion. Peut-être vous, ou un proche, faites cette expérience sans savoir à qui en parler ?</p><ul class=\"accUl\"><li class=\"accLi\">avez-vous des questions sans personne avec qui les partager ?</li><li class=\"accLi\">avez-vous un témoignage à apporter ?</li><li class=\"accLi\">êtes-vous tout simplement curieux d’en savoir plus sur ces phénomènes et l’approche développée au sein du REV ?</li></ul><p>Quelle que soit votre démarche, vous êtes bienvenu.</p></section><section id=\"Event4\"><h5>Pourquoi une conférence-partage?</h5><p>Au-delà des groupes d’entraide, le REV-Belgium considère qu’il est important de faire évoluer le regard porté sur ces phénomènes encore largement facteurs de stigmatisation et d’exclusion. Peut-être vous, ou un proche, faites cette expérience sans savoir à qui en parler ?</p><ul class=\"accUl\"><li class=\"accLi\">avez-vous des questions sans personne avec qui les partager ?</li><li class=\"accLi\">avez-vous un témoignage à apporter ?</li><li class=\"accLi\">êtes-vous tout simplement curieux d’en savoir plus sur ces phénomènes et l’approche développée au sein du REV ?</li></ul><p>Quelle que soit votre démarche, vous êtes bienvenu.</p></section><h5>Comment s’inscrire ?</h5><p>Venez tout simplement…</p><img id=\"EventImg\" alt=\"union\" src=\"https://rev-belgium.000webhostapp.com/images/apropos.png\">",
+        "1":{
+            "title":"Le 8ème congrès international des entendeurs de voix",
+            "content":"<p>Le Congrès mondial sur l’entente de voix est organisé chaque année depuis 2009 conjointement par Intervoice et un Réseau national sur l’entente de voix. Les précédents pays ayant accueilli ce congrès sont les Pays-Bas, le Royaume Uni, l’Italie, l’Australie, la Grèce et l’Espagne. En 2017, il se tiendra aux Etats-Unis.<br>Du 19 au 22 octobre 2016, le REV France a accueilli ce Congrès qui a rassemblé plus de 300 personnes de tous horizons et convictions autour d’une perspective commune : Changer l’Histoire en retissant nos histoires !</p>"
+        },
+        "0":{
+            "title":"Le 9ème congrès international des entendeurs de voix",
+            "content":"<p>Entendre des voix Etats-Unis est fier de présenter le 9e Congrès mondial Hearing Voices : Une révolution de Unseen voix. Le Congrès aura lieu du 16 au 18 Août 2017 à l' Université de Boston à Boston, Massachusetts, États-Unis.<br>Plus d'infos sur leur site</p>"
+        }
     }
 }
