@@ -1,5 +1,7 @@
 import React from 'react';
 import {Row,Col,Button} from 'react-materialize';
+import app from '../../Base';
+
 import Pages from './Pages';
 import Events from './Events';
 import Articles from './Articles';
@@ -8,6 +10,29 @@ import Mailist from './Mailist';
 // app = la connection à la DB ;) 
 
 export default class Admin extends React.Component {
+    constructor() {
+        super()
+        this.state = {mails:{}};
+    }
+
+    componentWillMount() {
+        this.getMailList();
+    }
+    
+    getMailList() {
+        console.log("get mail list");
+        let these = this;
+        // connect to db /contact
+        var addr = app.database().ref("/contact");
+        // get the content
+        addr.on("value", function(snap) {
+            console.log("ok, value is :")
+            console.log({mails:snap.val()})
+            these.setState({mails:snap.val()});
+            console.log("now state.mails is :")
+            console.log(these.state.mails)
+        });
+    }
 
     render() {
         return (
@@ -23,10 +48,12 @@ export default class Admin extends React.Component {
                             <li className="tab col s3"><a href="#mails">Mails</a></li>
                         </ul>
                         </div>
-                        <Pages />
+                        {/* <Pages />
                         <Events />
-                        <Articles />
-                        <Mailist />
+                        <Articles /> */}
+                        {console.log("I'm about to send this to component : ")}
+                        {console.log(this.state.mails)}
+                        <Mailist mails={this.state.mails} />
                     </Row>
                 </div>
             </div>

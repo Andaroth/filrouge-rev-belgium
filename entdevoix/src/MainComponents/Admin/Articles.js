@@ -27,15 +27,16 @@ export default class Articles extends React.Component {
         addr.on("value", function(snap) {
             console.log("ok, value is :")
             console.log({articles:snap.val()})
-            these.setState({articles:snap.val()});
+            var table = {articles:snap.val()};
+            these.setState({articles:snap.val()},table);
         });
     }
 
-    renderArticlesList(objList) {
+    renderArticlesList(objList,table) {
         console.log("try to map this :")
         console.log(objList.articles);
 
-        Object.keys(objList.articles).map( (value,i) => {
+        Object.keys(table).map( (value,i) => {
             var ivalue = value;
             console.log("["+ivalue+"]title:"+objList.articles[ivalue].title);
             console.log("["+ivalue+"]content:"+objList.articles[ivalue].content);
